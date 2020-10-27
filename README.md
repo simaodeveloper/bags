@@ -1,19 +1,19 @@
 # easy-storage
 A Abstration to better handle native Storage Web API
 
-# todo
+# Todo
 
-## more deps
+#### Dependencies
 
-[] eslint
-[] lint-staged
-[] husky
-[] commitlint
-[] standard
+- [ ] eslint
+- [ ] lint-staged
+- [ ] husky
+- [ ] commitlint
+- [ ] standard
 
-## CI to check code and deploy
+#### CI to check code and deploy
 
-[] github actions
+- [ ] github actions
 
 # Maintainers
 
