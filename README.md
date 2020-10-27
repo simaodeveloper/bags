@@ -1,2 +1,43 @@
 # easy-storage
 A Abstration to better handle native Storage Web API
+
+# todo
+
+## more deps
+
+[] eslint
+[] lint-staged
+[] husky
+[] commitlint
+[] standard
+
+## CI to check code and deploy
+
+[] github actions
+
+# Maintainers
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img width="150" height="150"
+        src="https://avatars2.githubusercontent.com/u/4645658?s=460&u=72ded9dd7cf1d6bfae41ed541fc349ca76d42d95&v=4">
+        </br>
+        <a href="https://github.com/simaodeveloper">Daniel Simão</a>
+      </td>
+    </tr>
+  <tbody>
+</table>
+
+# Contributors
+
+This project exists thanks to all the people who contribute.
+
+You're free to contribute to this project by submitting [issues](https://github.com/multipages/multipages/issues) and/or [pull requests](https://github.com/multipages/multipages/pulls). This project is test-driven, so keep in mind that every change and new feature should be covered by tests.
+
+This repository uses [standard style guide](https://github.com/standard/standard)
+
+# License
+
+MIT © Daniel Simão da Silva
