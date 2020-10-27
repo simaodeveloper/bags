@@ -1,5 +1,5 @@
 # EasyStorage
-A Abstration to better handle native Storage Web API
+The EasyStorage have simple methods to manager localStorage API + JSON API
 
 # Todo
 

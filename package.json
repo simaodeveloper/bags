@@ -1,7 +1,7 @@
 {
   "name": "easy-storage",
   "version": "1.0.0",
-  "description": "An abstraction to make easy use localStorage",
+  "description": "The EasyStorage have simple methods to manager localStorage API + JSON API",
   "main": "lib/easy-storage.cjs.js",
   "module": "lib/easy-storage.esm.js",
   "browser": "lib/easy-storage.umd.js",
