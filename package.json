@@ -1,0 +1,25 @@
+{
+  "name": "easy-storage",
+  "version": "1.0.0",
+  "description": "An abstraction to make easy use localStorage",
+  "main": "lib/easy-storage.cjs.js",
+  "module": "lib/easy-storage.esm.js",
+  "browser": "lib/easy-storage.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
+  },
+  "author": "Daniel Simão da Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.1",
+    "jest-babel": "^1.0.1",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}
