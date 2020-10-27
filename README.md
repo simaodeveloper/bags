@@ -1,4 +1,4 @@
-# easy-storage
+# EasyStorage
 A Abstration to better handle native Storage Web API
 
 # Todo
@@ -11,7 +11,7 @@ A Abstration to better handle native Storage Web API
 - [ ] commitlint
 - [ ] standard
 
-#### CI to check code and deploy
+#### CI/CD to check code and deploy
 
 - [ ] github actions
 
