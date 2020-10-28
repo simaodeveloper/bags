@@ -1,2 +1,12 @@
 coverage/
 example/
+tests/
+src/
+*.config.js
+*.lock
+.npmignore
+.lintstagedrc
+.huskyrc
+.gitignore
+.editorconfig
+.babelrc
