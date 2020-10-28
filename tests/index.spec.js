@@ -1,4 +1,4 @@
-import Bags from './index.js'
+import Bags from '../src/index.js'
 
 describe('Bags', () => {
   describe('Smoke Tests', () => {
