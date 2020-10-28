@@ -11,9 +11,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "deploy:minor": "yarn publish --new-version minor",
-    "deploy:major": "yarn version major;yarn publish",
-    "deploy:patch": "yarn version patch;yarn publish"
+    "deploy": "yarn publish"
   },
   "author": "Daniel Simão da Silva",
   "license": "MIT",
