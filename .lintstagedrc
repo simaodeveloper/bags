@@ -1,0 +1,6 @@
+{
+  "!(*test).js": [
+    "standard --fix",
+    "git add ."
+  ]
+}

@@ -8,14 +8,6 @@ WIP - The EasyStorage have simple methods to manager localStorage API + JSON API
 
 # Todo
 
-#### Dependencies
-
-- [ ] eslint
-- [ ] lint-staged
-- [ ] husky
-- [ ] commitlint
-- [ ] standard
-
 #### CI/CD to check code and deploy
 
 - [ ] github actions
