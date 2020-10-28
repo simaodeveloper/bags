@@ -14,10 +14,6 @@ export default {
       file: pkg.main,
       format: 'umd',
       name
-    },
-    {
-      file: pkg.module,
-      format: 'es'
     }
   ],
   plugins: [

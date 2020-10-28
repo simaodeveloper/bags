@@ -5,7 +5,7 @@ const MESSAGES = {
 
 const hasLocalStorage = () => 'localStorage' in window
 
-export default class Bags {
+class Bags {
   constructor () {
     this.initialize()
     this.store = localStorage
@@ -41,3 +41,5 @@ export default class Bags {
     return true
   }
 }
+
+module.exports = Bags
