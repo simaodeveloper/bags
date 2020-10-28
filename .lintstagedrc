@@ -1,7 +1,6 @@
 {
   "!(*test|lib/*).js": [
     "standard --fix",
-    "yarn test",
     "git add ."
   ]
 }

@@ -2,16 +2,15 @@
   "name": "bags",
   "version": "1.6.0",
   "description": "The Bags have simple methods to manager localStorage API + JSON API",
-  "main": "lib/bags.cjs.js",
   "module": "lib/bags.esm.js",
-  "browser": "lib/bags.umd.js",
+  "main": "lib/bags.umd.js",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c --watch",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "deploy": "yarn publish"
+    "deploy": "yarn test && yarn publish"
   },
   "author": "Daniel Simão da Silva",
   "license": "MIT",

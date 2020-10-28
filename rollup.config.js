@@ -12,16 +12,12 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'cjs'
+      format: 'umd',
+      name
     },
     {
       file: pkg.module,
       format: 'es'
-    },
-    {
-      file: pkg.browser,
-      format: 'umd',
-      name
     }
   ],
   plugins: [
