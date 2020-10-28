@@ -1,6 +1,6 @@
 {
   "name": "bags",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "The Bags have simple methods to manager localStorage API + JSON API",
   "main": "lib/bags.umd.js",
   "scripts": {
