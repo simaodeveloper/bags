@@ -5,34 +5,34 @@ describe('Bags', () => {
     let store
 
     beforeEach(() => {
-      store = new Bags()
+      store = Bags.create()
     })
 
-    test('it should be defined', () => {
+    test('it should have Bags Class defined', () => {
       expect(Bags).toBeDefined()
     })
 
-    test('it should create an instance', () => {
-      expect(store instanceof Bags).toBeTruthy()
+    test('it should have a static [create] method', () => {
+      expect(Bags.create).toBeDefined()
     })
 
-    test('it should have a [add] method', () => {
+    test('it should have an instance [add] method', () => {
       expect(store.add).toBeDefined()
     })
 
-    test('it should have a [remove] method', () => {
+    test('it should have an instance [remove] method', () => {
       expect(store.remove).toBeDefined()
     })
 
-    test('it should have a [has] method', () => {
+    test('it should have an instance [has] method', () => {
       expect(store.has).toBeDefined()
     })
 
-    test('it should have a [clear] method', () => {
+    test('it should have an instance [clear] method', () => {
       expect(store.clear).toBeDefined()
     })
 
-    test('it should have a [fetch] method', () => {
+    test('it should have an instance [fetch] method', () => {
       expect(store.fetch).toBeDefined()
     })
   })
@@ -47,7 +47,7 @@ describe('Bags', () => {
     const functionValue = () => {}
 
     beforeEach(() => {
-      store = new Bags()
+      store = Bags.create()
 
       store.add('string', stringValue)
       store.add('number', numberValue)
@@ -56,7 +56,11 @@ describe('Bags', () => {
       store.add('object', objectValue)
     })
 
-    test('it should add a value at store related to a key', () => {
+    test('it should create an instance', () => {
+      expect(store instanceof Bags).toBeTruthy()
+    })
+
+    test('it should add a value at store related to a given key', () => {
       expect(store.has('string')).toBeTruthy()
       expect(store.has('number')).toBeTruthy()
       expect(store.has('boolean')).toBeTruthy()
@@ -64,7 +68,7 @@ describe('Bags', () => {
       expect(store.has('object')).toBeTruthy()
     })
 
-    test('it should not add a function as a value and throw a error', () => {
+    test('it should not add a function as a value and throw an error', () => {
       expect(() => store.add('function', functionValue)).toThrow('The function value is invalid!')
     })
 
@@ -85,16 +89,14 @@ describe('Bags', () => {
       expect(store.has('object')).toBeFalsy()
     })
 
-    test('it should clear only one entry given a key', () => {
-      expect(store.has('boolean')).toBeTruthy()
-      store.clear('boolean')
-      expect(store.has('boolean')).toBeFalsy()
-    })
-
     test('it should remove only one entry given a key', () => {
       expect(store.has('boolean')).toBeTruthy()
       store.remove('boolean')
+      expect(store.has('string')).toBeTruthy()
+      expect(store.has('number')).toBeTruthy()
       expect(store.has('boolean')).toBeFalsy()
+      expect(store.has('array')).toBeTruthy()
+      expect(store.has('object')).toBeTruthy()
     })
   })
 
@@ -106,8 +108,8 @@ describe('Bags', () => {
       delete window.localStorage
     })
 
-    test('it should throw a error when localStorage is unavailable', () => {
-      expect(() => new Bags()).toThrow('The environment don\'t have a localStorage API!')
+    test('it should throw an error when localStorage is unavailable', () => {
+      expect(() => Bags.create()).toThrow('The environment don\'t have a localStorage API!')
     })
 
     afterEach(() => {
