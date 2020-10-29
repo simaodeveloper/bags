@@ -2,6 +2,7 @@ coverage/
 example/
 tests/
 src/
+config/
 *.config.js
 *.lock
 .npmignore

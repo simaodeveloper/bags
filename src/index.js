@@ -5,7 +5,7 @@ const MESSAGES = {
 
 const hasLocalStorage = () => 'localStorage' in window
 
-export default class Bags {
+class Bags {
   constructor () {
     this.initialize()
     this.store = localStorage
@@ -13,6 +13,10 @@ export default class Bags {
 
   initialize () {
     if (!hasLocalStorage()) throw MESSAGES.NATIVE_RESOURCE_NOT_FOUND()
+  }
+
+  static create () {
+    return new Bags()
   }
 
   add (key, value) {
@@ -34,10 +38,10 @@ export default class Bags {
     return this.store.getItem(key) !== null
   }
 
-  clear (key) {
-    if (key) return this.remove(key)
-
+  clear () {
     this.store.clear()
     return true
   }
 }
+
+export default Bags
