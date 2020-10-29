@@ -74,8 +74,8 @@ Create a new entry with any value (unless the function value)
 **Example**
 
 ```js
-Type.is('object', {}); // true
-Type.is('string', {}); // false
+bag.add('object', {});
+bag.add('array', []);
 ```
 
 # Maintainers
