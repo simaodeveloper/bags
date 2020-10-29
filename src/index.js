@@ -42,4 +42,4 @@ class Bags {
   }
 }
 
-module.exports = Bags
+export default Bags
