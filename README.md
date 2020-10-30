@@ -6,15 +6,6 @@ WIP - The Bags have simple methods to manager localStorage API + JSON API
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="licenses - MIT"></a>
 </p>
 
-# Todo
-
-- [ ] create a documentation
-- [ ] create a logo
-
-#### CI/CD to check code and deploy
-
-- [ ] github actions
-
 # Documentation
 
 ## Browser Support
@@ -62,33 +53,29 @@ After that the library will be available as `bags`. Follow an example:
 
 ```js
 
-Type.is('object', {});
-
-or
-
-Type.is('object')({});
+const bag = Bags.create();
 ```
 
 ## Methods
 
-> Follow the methods that the library provides.
+Follow the methods that the library provides.
 
-### Type.is(type, value)
+### bag.add(key, value)
 
-> Verify if value is equal type of the first argument
+Create a new entry with any value (unless the function value)
 
 **Arguments**
 
 | Argument | Type    | Options           |
 |----------|---------|-------------------|
-|`type`   |*string* | 'inform a type name'|
+|`key`   |*string* | 'Any string you want as a key'|
 |`value`   |*any* | 'any value'|
 
 **Example**
 
 ```js
-Type.is('object', {}); // true
-Type.is('string', {}); // false
+bag.add('object', {});
+bag.add('array', []);
 ```
 
 # Maintainers
