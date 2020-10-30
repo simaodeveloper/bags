@@ -28,7 +28,7 @@ $ npm install bags --save
 ```js
 import Bags from 'bags';
 
-const store = new Bags();
+const store = Bags.create();
 ```
 
 ### CommonJS
@@ -36,7 +36,7 @@ const store = new Bags();
 ```js
 const Bags = require('bags');
 
-const store = new Bags();
+const store = Bags.create();
 ```
 
 ### UMD in Browser
@@ -60,6 +60,20 @@ const bag = Bags.create();
 
 Follow the methods that the library provides.
 
+### Bags.create()
+
+Create is a static method that create a storage instance
+
+**Arguments**
+
+Don't have arguments
+
+**Example**
+
+```js
+const bag = Bags.create();
+```
+
 ### bag.add(key, value)
 
 Create a new entry with any value (unless the function value)
@@ -76,6 +90,77 @@ Create a new entry with any value (unless the function value)
 ```js
 bag.add('object', {});
 bag.add('array', []);
+```
+
+### bag.fetch(key)
+
+Fetch a value stored given a correspondent key
+> Return null if key not exists
+
+**Arguments**
+
+| Argument | Type    | Options           |
+|----------|---------|-------------------|
+|`key`   |*string* | 'Any string you want as a key'|
+
+**Example**
+
+```js
+bag.fetch('object'); // {}
+bag.fetch('array'); // []
+```
+
+### bag.has(key)
+
+Verify if value related with given key exists
+> Return a boolean true | false
+
+**Arguments**
+
+| Argument | Type    | Options           |
+|----------|---------|-------------------|
+|`key`   |*string* | 'Any string you want as a key'|
+
+**Example**
+
+```js
+bag.has('object'); // true
+bag.has('number'); // false
+```
+### bag.remove(key)
+
+Remove the given key and the related value
+> Return true if occurs correctly
+
+**Arguments**
+
+| Argument | Type    | Options           |
+|----------|---------|-------------------|
+|`key`   |*string* | 'Any string you want as a key'|
+
+**Example**
+
+```js
+bag.has('object'); // true
+bag.remove('object');
+bag.has('object'); // false
+```
+
+### bag.clear()
+
+Clear all the store instance
+> Return true if occurs correctly
+
+**Arguments**
+
+Don't have arguments
+
+**Example**
+
+```js
+bag.has('object'); // true
+bag.remove('object');
+bag.has('object'); // false
 ```
 
 # Maintainers
